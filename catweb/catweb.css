@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+.wrapper{
+    padding: 0 150px;
+}
+.head{
+    background-color: black;
+    height: 60px;
+    color: white;
+    padding: 20px;
+}
+.head .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.head .wrapper .phone{
+    display: flex;
+    vertical-align: middle;
+}
+.head .wrapper .phone i{
+    color: coral;
+    margin-right: 10px;
+    font-size: 16px;
+    padding-top: 5px;
+}
+.head .wrapper .phone p{
+    font-size: 20px;
+    font-family: Arial, sans-serif
+}
+.head .wrapper .social-mark{
+    display: flex;
+}
+.head .wrapper .social-mark .mark-container{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+    text-align: center;
+    border-radius: 80%;
+}
+.head .wrapper .social-mark .mark-container i{
+    color: black;
+    font-size: 10px;
+}
+.navbar{
+    height: 120px;
+    color: black;
+    padding: 20px;
+}
+.navbar .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .wrapper .title{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .wrapper .title p{
+    font-size: 50px;
+}
+.navbar .wrapper .title{
+    padding: 13px 0;
+}
+.navbar .wrapper .title p{
+    margin-left: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey
+}
+.navbar .wrapper .link{
+    padding: 30px 0;
+}
+.navbar .wrapper .link a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 30px;
+    font-size: 20px;
+}
+.navbar .wrapper .link a:first-child{
+    border-bottom: 2px solid orange;
+    padding-bottom: 20px;
+}
+.navbar .wrapper .donate-button{
+    padding: 30px 0;
+}
+.navbar .wrapper .donate-button a{
+    padding: 15px 25px;
+    text-decoration: none;
+    color: orange;
+    border: 2px solid orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.homepage{
+    height: 630px;
+    padding: 18px;
+    background-image: url(/catweb/img/asset\ 14.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.homepage .wrapper{
+    padding: 0 150px;
+}
+.homepage .wrapper .text-container{
+    margin-top: 180px;
+}
+.homepage .wrapper .text1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3b3b3b;
+    font-weight: 600;
+}
+.homepage .wrapper .text2{
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #77ace3;
+    font-weight: bold;
+}
+.homepage .wrapper .text3{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.homepage .wrapper .donate-button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    margin-top: 40px;
+    border: 1px solid orange;
+    padding: 22px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-us .wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 90px;
+}
+.about-us .wrapper div{
+    margin: 0 10px;
+}
+.about-us .wrapper .girl-picture img{
+    height: 550px;
+}
+.about-us .wrapper .text-container{
+    margin-top: 80px;
+}
+.about-us .wrapper .text-container p{
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-us .wrapper .text-container .text1{
+    font-size: 50px;
+    color: #3b3b3b;
+    font-weight: bold;
+}
+.about-us .wrapper .text-container .text2{
+    font-size: 30px;
+    color:#77ace3;
+}
+.about-us .wrapper .text-container .text3{
+    color: #999;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.about-us .wrapper .text-container .text4{
+    color: #999;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.about-us .wrapper .text-container a{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid orange;
+    padding: 22px 50px;
+    background-color: orange;
+    color: white;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.help-us{
+    background-color: #eee;
+    padding: 100px 0;
+}
+.help-us .wrapper .text-container{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.help-us .wrapper .text-container .text1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3b3b3b;
+}
+.help-us .wrapper .text-container .text2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #77ace3;
+}
+.help-us .wrapper .how-to-help-us{
+    display: flex;
+}
+.help-us .wrapper .how-to-help-us img{
+    display: inline-block;
+    margin: 20px;
+    
+}
+.help-us .wrapper .how-to-help-us .volunteer::before{
+    content: Volunteer;
+}
+
+
