@@ -202,13 +202,31 @@
 .help-us .wrapper .how-to-help-us{
     display: flex;
 }
-.help-us .wrapper .how-to-help-us img{
-    display: inline-block;
-    margin: 20px;
-    
+.help-us .wrapper .how-to-help-us>div{
+    width: 450px;
+    height: 450px;
+    margin: 15px;
+    position: relative;
 }
-.help-us .wrapper .how-to-help-us .volunteer::before{
-    content: Volunteer;
+.help-us .wrapper .how-to-help-us div div{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    position: absolute;
+    left: 125px;
+    bottom: 50px;
 }
-
+.help-us .wrapper .how-to-help-us div img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.help-us .wrapper .how-to-help-us .adopt>div{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    position: absolute;
+    left: 145px;
+    bottom: 50px;
+}
 
