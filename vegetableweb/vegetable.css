@@ -1,0 +1,17 @@
+.wrapper{
+    width: 1200px;
+    box-sizing: border-box;
+    margin: auto;
+}
+.header{
+    background-color: #679509;
+}
+.header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 0;
+}
