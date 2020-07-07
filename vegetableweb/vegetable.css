@@ -4,6 +4,9 @@
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+.title{
+    font-family: 'Pacifico', cursive;
+}
 .header{
     background-color: #679509;
 }
@@ -73,17 +76,16 @@
     padding-top: 35vh;
     line-height: 1.2;
 }
-.homepage .wrapper .title{
+.homepage .wrapper .big-title{
     font-size: 80px;
     font-weight: 600;
     margin: auto 0;
 }
-.homepage .wrapper .title span{
+.homepage .wrapper .big-title span{
     color: #679509;
 }
-.homepage .wrapper .sub-title{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
+.homepage .wrapper .title{
+    font-size: 32px;
     margin: 25px 0;
 }
 .homepage .wrapper a{
@@ -99,7 +101,7 @@
 .feature .wrapper{
     text-align: center;
 }
-.feature .wrapper .title{
+.feature .wrapper > .title{
     font-size: 45px;
     color: #679509;
     margin: 40px 0;
