@@ -1,0 +1,150 @@
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+body > div{
+    width: 960px;
+    margin: 150px auto;
+    position: relative;
+}
+.head{
+    text-align: center;
+}
+.head .main-title{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    position: relative;
+}
+.head .title::after{
+    content: "";
+    background-color: black;
+    padding: 1px 40px;
+    position: absolute;
+}
+.head .navbar a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 0 47px;
+    border: 1px dotted #ccc;
+    border-bottom: 2px solid #AE0014;
+}
+.title{
+    width: 360px;
+    background-color: #AE0014;
+    color: white;
+}
+.title .page{
+    max-width: 100%;
+    background-color: black;
+    padding: 25px 25px 55px;
+    line-height: 1.8;
+}
+.title h2{
+    font-size: 50px;
+}
+.title h2 span{
+    writing-mode: vertical-lr;
+    font-size: 140px;
+}
+.title .page h3{
+    font-size: 26px;
+}
+.title .page p{
+    font-size: 20px;
+}
+.article{
+    width: 690px;
+    background-color: #eee;
+    padding: 16px 20px;
+    line-height: 1.2;
+}
+.article > :nth-child(2n+3)::before{
+    content: "．";
+    color: #AE0014;
+    font-size: 18px;
+}
+.article > :first-child{
+    color: #AE0014;
+    font-weight: 700;
+    position: relative;
+}
+.article :first-child::after{
+    content: "";
+    position: absolute;
+    background-color: #AE0014;
+    width: 500px;
+    height: 1px;
+    top:10px;
+    left: 170px;
+}
+.article :nth-child(even){
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin: 7px 0;
+}
+.background{
+    width: 440px;
+    height: 300px;
+    background-color: #eee;
+}
+body > div:nth-child(even) .title{
+    position: absolute;
+    top: -60px;
+    left: 0;
+    z-index: 2;
+}
+body > div:nth-child(even) .background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -5;
+}
+body > div:nth-child(even) .car{
+    position: relative;
+    transform: translate(180px,100px);
+    z-index: -1;
+}
+body > div:nth-child(even) .article{
+    position: relative;
+    transform: translate(80px,70px);
+    z-index: 1;
+}
+body > div:nth-child(even) .play{
+    position: relative;
+    transform: translate(830px,-390px);
+    z-index: 3;
+}
+body > div:nth-child(odd) .title{
+    position: absolute;
+    top: -60px;
+    right: 0;
+    z-index: 2;
+}
+body > div:nth-child(odd) .background{
+    position: absolute;
+    top: 0;
+    right: 250px;
+    z-index: -5;
+}
+body > div:nth-child(odd) .car{
+    position: relative;
+    transform: translate(0,95px);
+    z-index: -1;
+}
+body > div:nth-child(odd) .article{
+    position: relative;
+    transform: translate(230px,70px);
+    z-index: 1;
+}
+body > div:nth-child(odd) .play{
+    position: relative;
+    transform: translate(-10px,-300px);
+    z-index: 3;
+}

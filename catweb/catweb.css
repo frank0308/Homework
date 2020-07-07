@@ -488,20 +488,25 @@
     width: 25%;
     height: 99%;
     transition: 0.3s; 
+    background-color: rgba(255, 153, 51, 0);
 }
 .picture-container div i{
-    background-color: rgba(255, 153, 51, 0);
+
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0px;
+    /* font-size: 0px; */
+    transform: scale(0);
     transition: 0.3s;
 }
-.picture-container div i:hover{
+.picture-container > div:hover{
     background-color: rgba(255, 153, 51, 0.7);
-    font-size: 50px;
+}
+.picture-container div:hover i{
+    transform: scale(1);
+    /* font-size: 50px; */
 }
 .picture-container .B{
     left: 25%;
