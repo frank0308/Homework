@@ -1,0 +1,239 @@
+@charset "UTF-8";
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+}
+
+body > div {
+  width: 960px;
+  margin: 150px auto;
+  position: relative;
+}
+
+body > div:nth-child(even) .title {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  z-index: 2;
+}
+
+body > div:nth-child(even) .background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -5;
+}
+
+body > div:nth-child(even) .car {
+  position: relative;
+  -webkit-transform: translate(180px, 100px);
+          transform: translate(180px, 100px);
+  z-index: -1;
+}
+
+body > div:nth-child(even) .article {
+  position: relative;
+  -webkit-transform: translate(80px, 70px);
+          transform: translate(80px, 70px);
+  z-index: 1;
+}
+
+body > div:nth-child(even) .play {
+  position: relative;
+  -webkit-transform: translate(830px, -390px);
+          transform: translate(830px, -390px);
+  z-index: 3;
+}
+
+body > div:nth-child(odd) .title {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  z-index: 2;
+}
+
+body > div:nth-child(odd) .background {
+  position: absolute;
+  top: 0;
+  right: 250px;
+  z-index: -5;
+}
+
+body > div:nth-child(odd) .car {
+  position: relative;
+  -webkit-transform: translate(0, 95px);
+          transform: translate(0, 95px);
+  z-index: -1;
+}
+
+body > div:nth-child(odd) .article {
+  position: relative;
+  -webkit-transform: translate(230px, 70px);
+          transform: translate(230px, 70px);
+  z-index: 1;
+}
+
+body > div:nth-child(odd) .play {
+  position: relative;
+  -webkit-transform: translate(-10px, -300px);
+          transform: translate(-10px, -300px);
+  z-index: 3;
+}
+
+.head .main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+
+.head .main-title::after {
+  content: "";
+  background-color: black;
+  width: 40px;
+  height: 3px;
+  margin-top: 20px;
+}
+
+.head a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 0 47px;
+  border: 1px dotted #ccc;
+  position: relative;
+}
+
+.head a div {
+  position: absolute;
+  width: 100%;
+  height: 5%;
+  background-color: #AE0014;
+  color: white;
+  line-height: 30px;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.head a:hover {
+  color: white;
+}
+
+.head a:hover div {
+  height: 100%;
+}
+
+.title {
+  width: 360px;
+  background-color: #AE0014;
+  color: white;
+}
+
+.title .red {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title .page {
+  max-width: 100%;
+  background-color: black;
+  padding: 25px 25px 55px;
+  line-height: 1.8;
+}
+
+.title .page h3 {
+  font-size: 26px;
+}
+
+.title .page p {
+  font-size: 20px;
+}
+
+.title h2 {
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title h2 .number {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  line-height: 0.9;
+  font-size: 140px;
+}
+
+.title h2 span {
+  display: inline-block;
+}
+
+.article {
+  width: 690px;
+  background-color: #eee;
+  padding: 16px 20px;
+  line-height: 1.2;
+}
+
+.article > :nth-child(2n+3)::before {
+  content: "．";
+  color: #AE0014;
+  font-size: 18px;
+}
+
+.article > :first-child {
+  color: #AE0014;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article :first-child::after {
+  content: "";
+  background-color: #AE0014;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  margin-left: 10px;
+}
+
+.article :nth-child(even) {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin: 7px 0;
+}
+
+.background {
+  width: 440px;
+  height: 300px;
+  background-color: #eee;
+}
+/*# sourceMappingURL=toyota2.css.map */
