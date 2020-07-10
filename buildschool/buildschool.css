@@ -1,0 +1,241 @@
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.homepage {
+  background-image: url(/buildschool/img/background_1.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+.homepage .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage .container .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  margin: 15px 0;
+}
+
+.homepage .container .title-container img {
+  width: 50px;
+}
+
+.homepage .container .title-container .text {
+  margin-left: 16px;
+}
+
+.homepage .container .title-container .text .title {
+  font-size: 26px;
+}
+
+.homepage .container .title-container .text .sub-title {
+  font-size: 12px;
+}
+
+.homepage .container nav a {
+  text-decoration: none;
+  padding-left: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.feature .container {
+  width: 960px;
+  padding: 180px 0 80px;
+}
+
+.feature .container > div {
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 100px;
+}
+
+.feature .container .title {
+  font-size: 30px;
+}
+
+.feature .container .title h3 {
+  padding-top: 10px;
+}
+
+.feature .container .title p {
+  font-size: 18px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.feature .container .title span {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.feature .container .content h3 {
+  font-size: 22px;
+  padding-bottom: 24px;
+}
+
+.feature .container .content p {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.feature .container .content p span {
+  display: block;
+  padding-top: 20px;
+}
+
+.time-title, .tools-title {
+  position: relative;
+  z-index: 99;
+}
+
+.time-title ::after, .tools-title ::after {
+  content: "";
+  background-image: url(/buildschool/img/asset_5.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.time-title ::before, .tools-title ::before {
+  content: "";
+  background-color: #015378;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.time-title h2, .tools-title h2 {
+  font-size: 24px;
+  text-align: center;
+  padding: 55px;
+  color: #fff;
+}
+
+.time {
+  width: 100% !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.time img {
+  width: 25%;
+}
+
+.time > :nth-child(2) img {
+  width: 12.5%;
+}
+
+.time > div {
+  padding: none;
+  padding-bottom: 80px;
+}
+
+.time > div p {
+  display: list-item;
+  text-align: left;
+  margin: 0 60px;
+  line-height: 1.5;
+}
+
+.time > div h3 {
+  padding: 50px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.time > div h4 {
+  color: red;
+  padding: 40px 0;
+  font-size: 18px;
+}
+
+.tools {
+  width: 100% !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.tools > div {
+  margin: auto;
+  width: 85%;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px dotted #aaa;
+  padding-bottom: 20px;
+  line-height: 1.8;
+}
+
+.tools > div .img {
+  width: 40%;
+}
+
+.tools > div .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 100px;
+}
+
+.tools > div .text h3 {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.tools > div:last-child {
+  border: none;
+}
+
+.tools > div p {
+  display: list-item;
+  font-size: 14px;
+}
+/*# sourceMappingURL=buildschool.css.map */
