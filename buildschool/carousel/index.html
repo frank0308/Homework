@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/buildschool/carousel/assets/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/buildschool/carousel/assets/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/buildschool/carousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                // autoplay:true,
+                loop:true,
+                nav:true,
+                margin:20,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    768: {
+                        items: 3,
+                    },
+                    1200: {
+                        items: 1,
+                    }
+                }
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="aus">
+        <div class="owl-carousel owl-theme">
+            <div class="b">
+                <img src="https://picsum.photos/400/300/?random=1">
+            </div>
+            <div><img src="https://picsum.photos/400/300/?random=2"></div>
+            <div><img src="https://picsum.photos/400/300/?random=3"></div>
+            <div><img src="https://picsum.photos/400/300/?random=4"></div>
+            <div><img src="https://picsum.photos/400/300/?random=5"></div>
+            <div><img src="https://picsum.photos/400/300/?random=6"></div>
+            <div><img src="https://picsum.photos/400/300/?random=7"></div>
+            <div><img src="https://picsum.photos/400/300/?random=8"></div>
+            <div><img src="https://picsum.photos/400/300/?random=9"></div>
+            <div><img src="https://picsum.photos/400/300/?random=11"></div>
+            <div><img src="https://picsum.photos/400/300/?random=22"></div>
+            <div><img src="https://picsum.photos/400/300/?random=33"></div>
+        </div>
+    </div>
+</body>
+
+</html>

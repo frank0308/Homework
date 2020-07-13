@@ -3,9 +3,63 @@ body {
 }
 
 .homepage {
-    background-image: url(/buildschool/img/background_1.png);
-    background-size: cover;
-    height: 100vh;
+    text-align: center;
+}
+
+.a2 {
+    background-image: url(/buildschool/img/background_2.png);
+}
+
+.owl-carousel {
+    div {
+
+        img{
+            filter: brightness(0.7);
+        }
+        // position: relative;
+        .container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            color: white;
+
+            h2 {
+                font-size: 40px;
+                margin-top: 180px;
+            }
+
+            h3 {
+                margin: 50px 0 140px;
+                font-size: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                margin: 0 30px;
+                padding: 10px 20px;
+                background-color: rgba(3, 63, 119, 0.6);
+                :hover{
+                    background-color:rgba(3, 63, 119, 1) ;
+                }
+            }
+
+            .bk {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: rgba(3, 63, 119, 0.6);
+            }
+        }
+    }
+}
+
+
+.header {
+    color: white;
+    background-color: black;
 
     .container {
         display: flex;
@@ -52,7 +106,7 @@ body {
 .feature {
     .container {
         width: 960px;
-        padding: 180px 0 80px;
+        padding: 120px 0 80px;
 
         >div {
             text-align: center;
@@ -100,7 +154,9 @@ body {
     }
 }
 
-.time-title,.tools-title {
+.time-title,
+.tools-title,
+.companion-title {
     position: relative;
     z-index: 99;
 
@@ -136,9 +192,10 @@ body {
 }
 
 .time {
-    width: 100%!important;
+    width: 100% !important;
     justify-content: space-between;
     text-align: center;
+
     img {
         width: 25%;
     }
@@ -148,34 +205,40 @@ body {
             width: 12.5%;
         }
     }
-    >div{
+
+    >div {
         padding: none;
         padding-bottom: 80px;
-        p{
+
+        p {
             display: list-item;
             text-align: left;
             margin: 0 60px;
             line-height: 1.5;
         }
-        h3{
+
+        h3 {
             padding: 50px 0;
             font-size: 20px;
             font-weight: 700;
         }
-        h4{
+
+        h4 {
             color: red;
             padding: 40px 0;
             font-size: 18px;
         }
     }
 }
-.tools{
-    width: 100%!important;
+
+.tools {
+    width: 100% !important;
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
     padding: 80px 0;
-    >div{
+
+    >div {
         margin: auto;
         width: 85%;
         margin-bottom: 60px;
@@ -183,27 +246,75 @@ body {
         border-bottom: 1px dotted #aaa;
         padding-bottom: 20px;
         line-height: 1.8;
-        .img{
+
+        .img {
             width: 40%;
 
         }
-        .text{
+
+        .text {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 0 100px;
-            h3{
+
+            h3 {
                 font-size: 24px;
                 padding-bottom: 10px;
             }
         }
-        &:last-child{
+
+        &:last-child {
             border: none;
         }
-        p{
+
+        p {
             display: list-item;
             font-size: 14px;
         }
+    }
+}
+
+.companion {
+    justify-content: space-between;
+    padding: 40px 0;
+
+    .img {
+        text-align: center;
+
+        img {
+            margin: 20px 0;
+        }
+    }
+
+    ;
+}
+
+.contact-us {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 2.5;
+    border-top: 5px solid #bbb;
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        img {
+            margin: 0 10px;
+        }
+    }
+
+    &>:nth-last-child(2) {
+        display: block;
+        text-decoration-line: underline;
     }
 }

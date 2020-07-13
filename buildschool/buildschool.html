@@ -9,11 +9,39 @@
     <link rel="stylesheet" href="/column-system.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="/buildschool/carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/buildschool/carousel/assets/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/buildschool/carousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 0,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    768: {
+                        items: 3,
+                        nav: false
+                    },
+                    1200: {
+                        items: 1,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            });
+        });
+    </script>
     <title>BuildSchool</title>
 </head>
 
 <body>
-    <div class="homepage">
+    <div class="header">
         <div class="container">
             <div class="title-container">
                 <img src="/buildschool/img/asset 0.png" alt="logo">
@@ -31,6 +59,89 @@
                 <a href="#">關於</a>
                 <a href="#">問題及洽詢</a>
             </nav>
+        </div>
+    </div>
+    <div class="homepage">
+        <div class="owl-carousel owl-theme">
+            <div>
+                <img src="/buildschool/img/background_1.png" alt="background1">
+                <div class="container">
+                    <h2>BUILD SCHOOL</h2>
+                    <h3>Build School 是軟體開發教育的先鋒，為學生打造更有競爭力的職涯</h3>
+                    <a href="">台北班簡介及報名(XXXX/XX月開課)</a>
+                    <a href="">新竹班簡介及報名(XXXX/XX月開課)</a>
+                    <a href="">即刻報名(中華大學學生)</a>
+                </div>
+            </div>
+            <div>
+                <img src="/buildschool/img/background_2.png" alt="background2">
+                <div class="container">
+                    <h2>想搭上火箭?<br> 
+                        門票是給想成為軟體工程師的你</h2>
+                    <h3 class="bk">BUILD SCHOOL - DEVELOPER CAREER BUILDER</h3><br>
+                    <a href="">台北班簡介及報名(XXXX/XX月開課)</a>
+                    <a href="">新竹班簡介及報名(XXXX/XX月開課)</a>
+                    <a href="">即刻報名(中華大學學生)</a>
+                </div>
+            </div>
+            <div>
+                <img src="/buildschool/img/background_3.png" alt="background3">
+                <div class="container">
+                    <h2 class="bk">這裏沒有考試<br>
+                        只有滿滿的程式碼</h2>
+                    <h3>NO TEST BUT YOUR CODES</h3>
+                    <a href="">台北班簡介及報名(XXXX/XX月開課)</a>
+                    <a href="">新竹班簡介及報名(XXXX/XX月開課)</a>
+                    <a href="">即刻報名(中華大學學生)</a>
+                </div>
+            </div>
+            <div>
+                <img src="/buildschool/img/background_4.png" alt="background4">
+                <div class="container">
+                    <h2>前往峰頂的路上<br>
+                        有人帶!</h2>
+                    <h3 class="bk">START CODING AND GET COACHED FROM MENTORS</h3><br>
+                    <a href="">台北班簡介及報名(XXXX/XX月開課)</a>
+                    <a href="">新竹班簡介及報名(XXXX/XX月開課)</a>
+                    <a href="">即刻報名(中華大學學生)</a>
+                </div>
+            </div>
+            <div>
+                <img src="/buildschool/img/background_5.png" alt="background5">
+                <div class="container">
+                    <h2 class="bk">動手做出東西<br>
+                        才能解決問題</h2>
+                    <h3>BUILD SOMETHING AND SOLVE THE PROBLEM, THAT'S MY STYLE</h3>
+                    <a href="">台北班簡介及報名(XXXX/XX月開課)</a>
+                    <a href="">新竹班簡介及報名(XXXX/XX月開課)</a>
+                    <a href="">即刻報名(中華大學學生)</a>
+                </div>
+            </div>
+            <div>
+                <img src="/buildschool/img/background_6.png" alt="background6">
+                <div class="container">
+                </div>
+            </div>
+            <div>
+                <img src="/buildschool/img/background_7.png" alt="background7">
+                <div class="container">
+                </div>
+            </div>
+            <div>
+                <img src="/buildschool/img/background_9.png" alt="background9">
+                <div class="container">
+                </div>
+            </div>
+            <div>
+                <img src="/buildschool/img/background_10.png" alt="background10">
+                <div class="container">
+                    <h2>BUILD SCHOOL</h2>
+                    <h3>Build School is a pioneer of software developer education and career builder for college students</h3>
+                    <a href="">Apply Now(Taipei Class)</a>
+                    <a href="">Apply Now(HsinChu Class)</a>
+                    <a href="">Apply Now(Chung Hua University)</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="feature">
@@ -166,6 +277,43 @@
                     DevOps 上自動化建置的狀態，皆可發通知至 Microsoft Teams 或 Slack，透過自動化提升工作效率，並熟悉一個軟體開發團隊的協同合作</p>
             </div>
         </div>
+    </div>
+    <div class="companion-title">
+        <h2>我們的講師及企業導師擁有在這些公司的工作經歷、擔任主管或資深工程師</h2>
+    </div>
+    <div class="companion container row">
+        <div class="img col-pc-3">
+            <img src="/buildschool/img/asset 17.png" alt="microsoft">
+            <img src="/buildschool/img/asset 18.png" alt="MVC">
+        </div>
+        <div class="img col-pc-3">
+            <img src="/buildschool/img/asset 19.png" alt="kingston">
+            <img src="/buildschool/img/asset 20.png" alt="trend">
+        </div>
+        <div class="img col-pc-3">
+            <img src="/buildschool/img/asset 21.png" alt="kerry">
+            <img src="/buildschool/img/asset 22.png" alt="gamania">
+        </div>
+        <div class="img col-pc-3">
+            <img src="/buildschool/img/asset 24.png" alt="skilltree">
+            <img src="/buildschool/img/asset 23.png" alt="leopartmobile">
+        </div>
+    </div>
+    <div class="contact-us">
+        <h3>合作及接洽</h3>
+        <p>有興趣軟體工程師徵才、或成為我們的講師或擔任指導學生的企業導師 (Inspire Mentor)，請與我們連絡</p>
+        <a href="#">email: contact@build-school.com</a>
+        <a href="#">電話: 02-66057606</a>
+        <p>​台北: 台北市忠孝東路三段96號11F-1 (台北科大對面/忠孝新生站3號出口)</p>
+        <p>新竹: 中華大學行政大樓圖資處</p>
+        <a href="#">
+            <img src="/buildschool/img/asset 25.png" alt=facebook>
+        </a>
+        <a href="#">
+            <img src="/buildschool/img/asset 26.png" alt="youtube">
+        </a>
+        <a href="#">隱私權宣告</a>
+        <p>© 2020 by Build School</p>
     </div>
 </body>
 

@@ -3,12 +3,70 @@ body {
 }
 
 .homepage {
-  background-image: url(/buildschool/img/background_1.png);
-  background-size: cover;
-  height: 100vh;
+  text-align: center;
 }
 
-.homepage .container {
+.a2 {
+  background-image: url(/buildschool/img/background_2.png);
+}
+
+.owl-carousel div img {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.owl-carousel div .container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+}
+
+.owl-carousel div .container h2 {
+  font-size: 40px;
+  margin-top: 180px;
+}
+
+.owl-carousel div .container h3 {
+  margin: 50px 0 140px;
+  font-size: 20px;
+}
+
+.owl-carousel div .container a {
+  text-decoration: none;
+  color: white;
+  margin: 0 30px;
+  padding: 10px 20px;
+  background-color: rgba(3, 63, 119, 0.6);
+}
+
+.owl-carousel div .container a :hover {
+  background-color: #033f77;
+}
+
+.owl-carousel div .container .bk {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(3, 63, 119, 0.6);
+}
+
+.owl-carousel div .container .bk:hover{
+  background-color: rgba(3, 63, 119, 1);
+}
+
+.owl-carousel div .container .bk :hover {
+  background-color: #033f77;
+}
+
+.header {
+  color: white;
+  background-color: black;
+}
+
+.header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +78,7 @@ body {
           align-items: center;
 }
 
-.homepage .container .title-container {
+.header .container .title-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,23 +94,23 @@ body {
   margin: 15px 0;
 }
 
-.homepage .container .title-container img {
+.header .container .title-container img {
   width: 50px;
 }
 
-.homepage .container .title-container .text {
+.header .container .title-container .text {
   margin-left: 16px;
 }
 
-.homepage .container .title-container .text .title {
+.header .container .title-container .text .title {
   font-size: 26px;
 }
 
-.homepage .container .title-container .text .sub-title {
+.header .container .title-container .text .sub-title {
   font-size: 12px;
 }
 
-.homepage .container nav a {
+.header .container nav a {
   text-decoration: none;
   padding-left: 20px;
   font-size: 14px;
@@ -61,7 +119,7 @@ body {
 
 .feature .container {
   width: 960px;
-  padding: 180px 0 80px;
+  padding: 120px 0 80px;
 }
 
 .feature .container > div {
@@ -106,12 +164,16 @@ body {
   padding-top: 20px;
 }
 
-.time-title, .tools-title {
+.time-title,
+.tools-title,
+.companion-title {
   position: relative;
   z-index: 99;
 }
 
-.time-title ::after, .tools-title ::after {
+.time-title ::after,
+.tools-title ::after,
+.companion-title ::after {
   content: "";
   background-image: url(/buildschool/img/asset_5.png);
   position: absolute;
@@ -122,7 +184,9 @@ body {
   z-index: -2;
 }
 
-.time-title ::before, .tools-title ::before {
+.time-title ::before,
+.tools-title ::before,
+.companion-title ::before {
   content: "";
   background-color: #015378;
   position: absolute;
@@ -134,7 +198,9 @@ body {
   opacity: 0.9;
 }
 
-.time-title h2, .tools-title h2 {
+.time-title h2,
+.tools-title h2,
+.companion-title h2 {
   font-size: 24px;
   text-align: center;
   padding: 55px;
@@ -237,5 +303,49 @@ body {
 .tools > div p {
   display: list-item;
   font-size: 14px;
+}
+
+.companion {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+
+.companion .img {
+  text-align: center;
+}
+
+.companion .img img {
+  margin: 20px 0;
+}
+
+.contact-us {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  line-height: 2.5;
+  border-top: 5px solid #bbb;
+}
+
+.contact-us h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-us a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-us a img {
+  margin: 0 10px;
+}
+
+.contact-us > :nth-last-child(2) {
+  display: block;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 /*# sourceMappingURL=buildschool.css.map */
