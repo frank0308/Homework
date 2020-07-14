@@ -2,12 +2,20 @@ body {
   font-family: 'Noto Sans SC', sans-serif;
 }
 
-.homepage {
-  text-align: center;
+label {
+  display: none;
 }
 
-.a2 {
-  background-image: url(/buildschool/img/background_2.png);
+input {
+  display: none;
+}
+
+.hamburger-content {
+  display: none;
+}
+
+.homepage {
+  text-align: center;
 }
 
 .owl-carousel div img {
@@ -15,7 +23,7 @@ body {
           filter: brightness(0.7);
 }
 
-.owl-carousel div .container {
+.owl-carousel div .img-container {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -25,17 +33,17 @@ body {
   color: white;
 }
 
-.owl-carousel div .container h2 {
+.owl-carousel div .img-container h2 {
   font-size: 40px;
   margin-top: 180px;
 }
 
-.owl-carousel div .container h3 {
+.owl-carousel div .img-container h3 {
   margin: 50px 0 140px;
   font-size: 20px;
 }
 
-.owl-carousel div .container a {
+.owl-carousel div .img-container a {
   text-decoration: none;
   color: white;
   margin: 0 30px;
@@ -43,22 +51,14 @@ body {
   background-color: rgba(3, 63, 119, 0.6);
 }
 
-.owl-carousel div .container a :hover {
+.owl-carousel div .img-container a :hover {
   background-color: #033f77;
 }
 
-.owl-carousel div .container .bk {
+.owl-carousel div .img-container .bk {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(3, 63, 119, 0.6);
-}
-
-.owl-carousel div .container .bk:hover{
-  background-color: rgba(3, 63, 119, 1);
-}
-
-.owl-carousel div .container .bk :hover {
-  background-color: #033f77;
 }
 
 .header {
@@ -265,6 +265,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px dotted #aaa;
   padding-bottom: 20px;
   line-height: 1.8;
@@ -272,6 +282,11 @@ body {
 
 .tools > div .img {
   width: 40%;
+}
+
+.tools > div .img img {
+  display: block;
+  margin: 15px auto;
 }
 
 .tools > div .text {
@@ -347,5 +362,287 @@ body {
   display: block;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+@media screen and (max-width: 993px) {
+  label {
+    background-color: #ddd;
+    display: block;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    top: 30px;
+    border-radius: 5px;
+    z-index: 999;
+  }
+  label span {
+    width: 70%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #585858;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  label span:nth-child(1) {
+    -webkit-transform: translate(0, -11px);
+            transform: translate(0, -11px);
+  }
+  label span:nth-child(3) {
+    -webkit-transform: translate(0, 11px);
+            transform: translate(0, 11px);
+  }
+  input {
+    display: none;
+  }
+  input:checked ~ label {
+    color: black;
+  }
+  input:checked ~ label :nth-child(1) {
+    -webkit-transform: rotate(-225deg);
+            transform: rotate(-225deg);
+  }
+  input:checked ~ label :nth-child(2) {
+    opacity: 0;
+  }
+  input:checked ~ label :nth-child(3) {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  input:checked ~ label span {
+    background-color: black;
+  }
+  input:checked ~ .hamburger-content {
+    right: 0;
+    opacity: 1;
+  }
+  .hamburger-content {
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    background-color: white;
+    width: 300px;
+    height: 85vh;
+    border-radius: 5px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    z-index: 998;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 120px 80px;
+    opacity: 0;
+  }
+  .hamburger-content a {
+    border-bottom: 1px solid #bbb;
+    padding: 36px 0;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+  }
+  .container {
+    max-width: 992px !important;
+  }
+  .header nav {
+    display: none;
+  }
+  .header .sub-title {
+    display: none;
+  }
+  .owl-carousel div .img-container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 60px;
+  }
+  .owl-carousel div .img-container h2 {
+    font-size: 40px;
+    margin: 20px 0 15px;
+  }
+  .owl-carousel div .img-container h3 {
+    margin: 15px 120px;
+    font-size: 24px;
+  }
+  .owl-carousel div .img-container a {
+    margin: 12px 120px;
+    font-size: 18px;
+    display: inline-block;
+  }
+  .feature .container {
+    padding: 50px 200px 0;
+  }
+  .feature .container > :nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .feature .container > :nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .feature .container > :nth-child(3) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .feature .container > :nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .feature .container > :nth-child(5) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .feature .container > :nth-child(6) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .feature .container > :nth-child(7) {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  .feature .container > :nth-child(8) {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  .feature .container .title h3 {
+    padding-top: 30px;
+  }
+  .feature .container .content {
+    font-size: 40px;
+  }
+  .time img {
+    width: 12.5%;
+  }
+  .time > :nth-child(2) img {
+    width: 6.25%;
+  }
+  .time > div p {
+    font-size: 24px;
+    margin: 0 300px;
+    line-height: 1.8;
+  }
+  .time > div h3 {
+    font-size: 40px;
+  }
+  .time > div h4 {
+    font-size: 26px;
+  }
+  .companion {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 40px 0;
+  }
+  .companion .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 150px;
+  }
+  .companion .img img {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    max-width: 768px !important;
+  }
+  .hamburger-content {
+    width: 120px;
+    height: 85vh;
+    padding: 120px 80px;
+    opacity: 0;
+  }
+  .hamburger-content a {
+    font-size: 24px;
+  }
+  .owl-carousel .owl-dots {
+    top: 85% !important;
+  }
+  .owl-carousel div .img-container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 60px;
+  }
+  .owl-carousel div .img-container h2 {
+    font-size: 30px;
+    margin: 16px 0 15px;
+  }
+  .owl-carousel div .img-container h3 {
+    margin: 8px 120px;
+    font-size: 20px;
+  }
+  .owl-carousel div .img-container a {
+    margin: 8px 120px;
+    font-size: 16px;
+    display: inline-block;
+  }
+  .feature .container {
+    width: 100%;
+    padding: 50px 0px 0;
+  }
+  .feature .container > div {
+    margin: 40px auto;
+  }
+  .feature .container .content h3 {
+    font-size: 26px;
+  }
+  .feature .container .content p {
+    font-size: 20px;
+  }
+  .time > div {
+    width: 100%;
+  }
+  .time > div p {
+    margin: 0 auto;
+  }
+  .tools .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tools .row .text {
+    padding: 0 80px;
+  }
+  .tools .row .text h3 {
+    font-size: 30px;
+  }
+  .tools .row p {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .companion .img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=buildschool.css.map */
