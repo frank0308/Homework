@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Sans SC', sans-serif;
 }
 
-label{
+label {
     display: none;
 }
 
@@ -261,7 +261,8 @@ input {
 
         .img {
             width: 40%;
-            img{
+
+            img {
                 display: block;
                 margin: 15px auto;
             }
@@ -574,32 +575,44 @@ input {
     }
 
     .owl-carousel {
-        .owl-dots{
-            top: 85%!important;
-        }
-        .owl-nav{
-            .owl-prev{
-
+        .owl-dots {
+            top: 85% !important;
+            .owl-dot{
+                span{
+                    width: 3px!important;
+                    height: 3px!important;
+                    margin: 5px 1px!important;
+                }
             }
         }
+
+        .owl-nav {
+
+            .owl-prev,
+            .owl-next {
+                font-size: 38px !important;
+            }
+        }
+
         div {
             .img-container {
                 box-sizing: border-box;
                 padding: 0 60px;
 
                 h2 {
-                    font-size: 30px;
-                    margin: 16px 0 15px;
+                    font-size: 16px;
+                    margin: 5px 0 6px;
                 }
 
                 h3 {
-                    margin: 8px 120px;
-                    font-size: 20px;
+                    margin: 4px 0;
+                    font-size: 12px;
                 }
 
                 a {
-                    margin: 8px 120px;
-                    font-size: 16px;
+                    padding: 2px 3px;
+                    margin: 5px 15px;
+                    font-size: 8px;
                     display: inline-block;
                 }
             }
@@ -608,15 +621,18 @@ input {
 
     .feature {
         .container {
-            >div{
+            >div {
                 margin: 40px auto;
             }
+
             width: 100%;
             padding: 50px 0px 0;
+
             .content {
-                h3{
+                h3 {
                     font-size: 26px;
                 }
+
                 p {
                     font-size: 20px;
                 }
@@ -629,32 +645,59 @@ input {
 
         >div {
             width: 100%;
+
             p {
                 margin: 0 auto;
             }
+
+            img {
+                width: 30%;
+            }
+
+        }
+
+        >:nth-child(2) {
+            img {
+                width: 15%;
+            }
         }
     }
-    .tools {    
+
+    .tools {
         .row {
             flex-direction: column;
             justify-content: center;
-            align-items: center;   
+            align-items: center;
+
+            .img {
+                width: 100%;
+                text-align: center;
+            }
+
             .text {
-                padding: 0 80px;
+                padding: 0;
+
                 h3 {
                     font-size: 30px;
                 }
             }
+
             p {
                 font-size: 16px;
                 padding-bottom: 20px;
             }
         }
     }
+
     .companion {
         .img {
             display: block;
             margin: 0 auto;
+
+            img {
+                margin: 20px auto;
+                display: block;
+            }
         }
     }
 }

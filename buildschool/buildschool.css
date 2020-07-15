@@ -581,22 +581,32 @@ input {
   .owl-carousel .owl-dots {
     top: 85% !important;
   }
+  .owl-carousel .owl-dots .owl-dot span {
+    width: 3px !important;
+    height: 3px !important;
+    margin: 5px 1px !important;
+  }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    font-size: 38px !important;
+  }
   .owl-carousel div .img-container {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0 60px;
   }
   .owl-carousel div .img-container h2 {
-    font-size: 30px;
-    margin: 16px 0 15px;
+    font-size: 16px;
+    margin: 5px 0 6px;
   }
   .owl-carousel div .img-container h3 {
-    margin: 8px 120px;
-    font-size: 20px;
+    margin: 4px 0;
+    font-size: 12px;
   }
   .owl-carousel div .img-container a {
-    margin: 8px 120px;
-    font-size: 16px;
+    padding: 2px 3px;
+    margin: 5px 15px;
+    font-size: 8px;
     display: inline-block;
   }
   .feature .container {
@@ -618,6 +628,12 @@ input {
   .time > div p {
     margin: 0 auto;
   }
+  .time > div img {
+    width: 30%;
+  }
+  .time > :nth-child(2) img {
+    width: 15%;
+  }
   .tools .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -630,8 +646,12 @@ input {
         -ms-flex-align: center;
             align-items: center;
   }
+  .tools .row .img {
+    width: 100%;
+    text-align: center;
+  }
   .tools .row .text {
-    padding: 0 80px;
+    padding: 0;
   }
   .tools .row .text h3 {
     font-size: 30px;
@@ -643,6 +663,10 @@ input {
   .companion .img {
     display: block;
     margin: 0 auto;
+  }
+  .companion .img img {
+    margin: 20px auto;
+    display: block;
   }
 }
 /*# sourceMappingURL=buildschool.css.map */
