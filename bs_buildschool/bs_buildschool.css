@@ -1,0 +1,335 @@
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.navbar {
+  background-color: black;
+  position: relative;
+}
+
+.navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar button {
+  background-color: white;
+  padding: 4px 6px;
+  z-index: 9999;
+}
+
+.navbar button:focus {
+  outline: none;
+}
+
+.navbar button .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar .navbar-collapse {
+  padding-top: 15%;
+  background-color: white;
+  position: absolute;
+  width: 200px;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.navbar .navbar-nav li {
+  text-align: center;
+  padding: 12px 0px;
+}
+
+.navbar .navbar-nav li a {
+  width: 60%;
+  margin: 0 auto;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar .navbar-nav li:last-child a {
+  border-bottom: none;
+}
+
+.navbar .navbar-nav .show {
+  display: block;
+}
+
+.carousel .carousel-indicators li {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  margin: 0 10px;
+}
+
+.carousel .carousel-inner > div {
+  padding: 60% 0;
+  max-width: 768px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.carousel .carousel-inner > div a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 8px 0;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(43, 73, 119, 0.8);
+}
+
+.carousel .carousel-inner > div h2 {
+  font-size: 30px;
+}
+
+.carousel .carousel-inner > div h3 {
+  font-size: 20px;
+  margin: 20px 0 80px;
+}
+
+.carousel .carousel-inner > div:nth-child(1) {
+  background-image: url(/bs_buildschool/img/background_1.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background-image: url(/bs_buildschool/img/background_1.png), linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.carousel .carousel-inner > div:nth-child(2) {
+  background-image: url(/bs_buildschool/img/background_2.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background-image: url(/bs_buildschool/img/background_2.png), linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.carousel .carousel-inner > div:nth-child(3) {
+  background-image: url(/bs_buildschool/img/background_3.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background-image: url(/bs_buildschool/img/background_3.png), linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.carousel .carousel-inner > div:nth-child(4) {
+  background-image: url(/bs_buildschool/img/background_4.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background-image: url(/bs_buildschool/img/background_4.png), linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.carousel .carousel-inner > div:nth-child(5) {
+  background-image: url(/bs_buildschool/img/background_5.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background-image: url(/bs_buildschool/img/background_5.png), linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.carousel .carousel-inner > div:nth-child(6) {
+  background-image: url(/bs_buildschool/img/background_6.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background-image: url(/bs_buildschool/img/background_6.png), linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.carousel .carousel-inner > div:nth-child(7) {
+  background-image: url(/bs_buildschool/img/background_7.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background-image: url(/bs_buildschool/img/background_7.png), linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.carousel .carousel-inner > div:nth-child(8) {
+  background-image: url(/bs_buildschool/img/background_9.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background-image: url(/bs_buildschool/img/background_9.png), linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.carousel .carousel-inner > div:nth-child(9) {
+  background-image: url(/bs_buildschool/img/background_10.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background-image: url(/bs_buildschool/img/background_10.png), linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.feature .row > div {
+  text-align: center;
+  padding: 0 15%;
+  margin: 30px 0;
+}
+
+.feature .row > div h3 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.feature .row > div p {
+  font-size: 14px;
+}
+
+.feature .row > div p span {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.feature .row > div:nth-child(1) p {
+  text-align: left;
+}
+
+.feature .row > :nth-child(1) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.feature .row > :nth-child(2) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.feature .row > :nth-child(3) {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.feature .row > :nth-child(4) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.feature .row > :nth-child(5) {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+.feature .row > :nth-child(6) {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+}
+
+.feature .row > :nth-child(7) {
+  -webkit-box-ordinal-group: 9;
+      -ms-flex-order: 8;
+          order: 8;
+}
+
+.feature .row > :nth-child(8) {
+  -webkit-box-ordinal-group: 8;
+      -ms-flex-order: 7;
+          order: 7;
+}
+
+.tools-title h2,
+.companion-title h2 {
+  background-blend-mode: multiply;
+  background-image: url(/buildschool/img/asset_5.png), -webkit-gradient(linear, left top, left bottom, from(rgba(1, 83, 120, 0.9)), to(rgba(1, 83, 120, 0.9)));
+  background-image: url(/buildschool/img/asset_5.png), linear-gradient(rgba(1, 83, 120, 0.9) 0%, rgba(1, 83, 120, 0.9) 100%);
+  font-size: 20px;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+}
+
+.tools .row .col-12:not(:last-child) .text {
+  border-bottom: 2px dotted #ccc;
+}
+
+.contact-us * {
+  margin: 15px 0;
+}
+
+.contact-us h3 {
+  font-size: 26px;
+}
+
+.contact-us h4 {
+  font-size: 16px;
+}
+
+.contact-us a,
+.contact-us p {
+  display: block;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-us a[class="social"] {
+  display: inline;
+  margin: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel .carousel-control-next-icon, .carousel .carousel-control-prev-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .carousel .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+  }
+  .carousel .carousel-inner > div {
+    max-width: 992px;
+  }
+  .carousel .carousel-inner > div a {
+    font-size: 30px;
+    margin: 20px 0;
+    padding: 5px 10px;
+  }
+  .carousel .carousel-inner > div a:last-child {
+    margin-bottom: 100px;
+  }
+  .carousel .carousel-inner > div h2 {
+    font-size: 80px;
+    margin-bottom: 10%;
+  }
+  .carousel .carousel-inner > div h3 {
+    font-size: 40px;
+    margin: 20px 0 120px;
+  }
+}
+
+.feature .row {
+  padding: 30px 0;
+}
+
+.feature .row .title:first-child img {
+  width: 50%;
+}
+
+.feature .row .title img {
+  width: 30%;
+}
+
+.feature .row .title p {
+  padding-left: 80px;
+}
+
+.feature .row .content {
+  margin-top: 20px;
+}
+
+.feature .row > div {
+  padding: 0;
+}
+
+.feature .row > div h3 {
+  font-size: 40px;
+  margin: 40px 0;
+}
+
+.feature .row > div p {
+  font-size: 28px;
+}
+
+.tools-title h2,
+.companion-title h2 {
+  font-size: 24px;
+}
+
+.tools .row .text h3 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.tools .row .text p {
+  font-size: 20px;
+}
+/*# sourceMappingURL=bs_buildschool.css.map */
