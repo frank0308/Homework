@@ -256,6 +256,20 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 700;
+  }
+  .navbar .logo img {
+    width: 70%;
+  }
+  .navbar .logo p {
+    font-size: 40px;
+  }
   .carousel .carousel-control-next-icon, .carousel .carousel-control-prev-icon {
     width: 60px;
     height: 60px;
@@ -331,5 +345,76 @@ body {
 
 .tools .row .text p {
   font-size: 20px;
+}
+
+.companion > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-us {
+  text-align: center !important;
+  padding: 3% 20% !important;
+}
+
+.contact-us h3 {
+  font-size: 32px;
+}
+
+.contact-us h4 {
+  font-size: 20px;
+}
+
+.contact-us a, .contact-us p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .navbar {
+    position: relative;
+  }
+  .navbar .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar button {
+    background-color: white;
+    padding: 4px 6px;
+    z-index: 9999;
+  }
+  .navbar button .navbar-collapse {
+    padding-top: 15%;
+    background-color: white;
+    position: relative;
+    width: 200px;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar button .navbar-nav li {
+    text-align: center;
+    padding: 12px 0px;
+  }
+  .navbar button .navbar-nav li a {
+    width: 60%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ccc;
+  }
+  .navbar button .navbar-nav li:last-child a {
+    border-bottom: none;
+  }
+  .navbar button .navbar-nav .show {
+    display: block;
+  }
 }
 /*# sourceMappingURL=bs_buildschool.css.map */

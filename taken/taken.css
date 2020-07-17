@@ -1,0 +1,220 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  z-index: 999;
+}
+
+.navbar img {
+  width: 25%;
+  margin: auto;
+}
+
+.navbar #hb {
+  display: none;
+}
+
+.navbar label[for="hb"] {
+  display: block;
+  position: relative;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.navbar label[for="hb"] span {
+  width: 80%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 3px;
+}
+
+.navbar label[for="hb"] span:first-child {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.navbar label[for="hb"] span:last-child {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.navbar .side-bar {
+  background-color: black;
+  position: fixed;
+  width: 80%;
+  height: 700px;
+  top: 50px;
+  left: -100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  overflow: auto;
+  color: white;
+  z-index: 1000;
+}
+
+.navbar .side-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar .side-bar p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.navbar .side-bar table {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.navbar .side-bar table thead label {
+  width: 100%;
+}
+
+.navbar .side-bar table tbody tr td,
+.navbar .side-bar table thead tr td {
+  width: 50%;
+  background-color: #1E1E1E;
+  border: 1px solid #505050;
+}
+
+.navbar .side-bar table tbody tr td input[type*="text"],
+.navbar .side-bar table thead tr td input[type*="text"] {
+  background-color: inherit;
+  border: none;
+  width: 75%;
+}
+
+.navbar .side-bar table tbody tr td input[type*="check"],
+.navbar .side-bar table thead tr td input[type*="check"] {
+  display: none;
+}
+
+.navbar .side-bar table tbody tr td i,
+.navbar .side-bar table thead tr td i {
+  font-size: 18px;
+}
+
+.navbar .side-bar table tbody tr td i[class*="time"],
+.navbar .side-bar table thead tr td i[class*="time"] {
+  color: white;
+  margin-left: 5px;
+}
+
+.navbar .side-bar table tbody tr td i[class*="search"],
+.navbar .side-bar table thead tr td i[class*="search"] {
+  color: #505050;
+  margin-left: 5px;
+}
+
+.navbar .side-bar table tbody tr td label,
+.navbar .side-bar table thead tr td label {
+  float: right;
+  margin: 0;
+}
+
+.navbar .side-bar table tbody tr td i[class*="plus"],
+.navbar .side-bar table thead tr td i[class*="plus"] {
+  display: inline-block;
+  color: #505050;
+}
+
+.navbar .side-bar table tbody tr td.handle-item, .navbar .side-bar table tbody tr td.knob-item,
+.navbar .side-bar table thead tr td.handle-item,
+.navbar .side-bar table thead tr td.knob-item {
+  background-color: #3f3f3f;
+  display: none;
+}
+
+.navbar .side-bar table tbody tr td.community,
+.navbar .side-bar table thead tr td.community {
+  display: none;
+}
+
+.navbar #hb:checked ~ .side-bar {
+  left: 0;
+}
+
+.homepage .carousel .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+  border-radius: 100%;
+}
+
+.homepage .carousel .carousel-inner > div {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.homepage .carousel .carousel-inner > div:nth-child(1) {
+  background-image: url(/taken/img/mainbnr_17.png);
+}
+
+.homepage .carousel .carousel-inner > div:nth-child(2) {
+  background-image: url(/taken/img/mainbnr_12.png);
+}
+
+.homepage .carousel .carousel-inner > div .carousel-caption {
+  bottom: 30%;
+}
+
+.homepage .carousel .carousel-inner > div .carousel-caption h2 {
+  font-size: 60px;
+  margin: 10px 0;
+  line-height: 2;
+}
+
+.homepage .carousel .carousel-inner > div .carousel-caption h3 {
+  font-size: 30px;
+}
+
+.homepage .carousel .carousel-inner > div .carousel-caption a {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  border: 1px solid white;
+}
+
+.factory h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.factory p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666666;
+}
+
+.handle h3 {
+  font-size: 20px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.handle .row .col-6 .card {
+  border: none;
+}
+
+.handle .row .col-6 .card p {
+  font-size: 10px;
+  margin-bottom: 6px;
+}
+/*# sourceMappingURL=taken.css.map */

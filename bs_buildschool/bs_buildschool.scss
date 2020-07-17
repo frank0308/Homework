@@ -257,6 +257,22 @@ body {
 }
 
 @media screen and (min-width:768px){
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color:transparent;
+        z-index: 700;
+        .logo{
+            img{
+                width: 70%;
+            }
+            p{
+                font-size: 40px;
+            }
+        }
+    }
     .carousel {
         .carousel-control-next-icon, .carousel-control-prev-icon{
             width: 60px;
@@ -346,4 +362,82 @@ body {
             }
         }
     }
+}
+.companion{
+    > div{
+        display: flex;
+    }
+}
+.contact-us{
+    text-align: center!important;
+    padding: 3% 20%!important;
+    h3{
+        font-size: 32px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    a,p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+
+    .navbar {
+        position: relative;
+        .logo {
+            display: flex;
+            align-items: center;
+            img {
+            }
+        }
+    
+        button {
+            background-color: white;
+            padding: 4px 6px;
+            z-index: 9999;
+    
+        .navbar-collapse {
+            padding-top: 15%;
+            background-color: white;
+            position: relative;
+            // display: block;
+            width: 200px;
+            top: 0;
+            right: 0;
+            z-index: 99;
+        }
+    
+        .navbar-nav {
+            li {
+                text-align: center;
+                padding: 12px 0px;
+    
+                a {
+                    width: 60%;
+                    margin: 0 auto;
+                    text-decoration: none;
+                    color: black;
+                    border-bottom: 1px solid #ccc;
+                }
+    
+                &:last-child {
+                    a {
+                        border-bottom: none;
+                    }
+    
+                }
+            }
+    
+            .show {
+                display: block;
+    
+            }
+        }
+    }
+}
 }
