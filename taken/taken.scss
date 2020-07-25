@@ -225,3 +225,82 @@
         }
     }
 }
+.take-it-taken{
+    background-image: url(/taken/img/ia_100000152.jpg), linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background-blend-mode: multiply;
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    p{
+        padding: 80px 0;
+        font-size: 24px;
+        line-height: 1.6;
+        span{
+            display: block;
+            font-weight: bold;
+            font-size: 50px;
+        }
+    }
+}
+.footer{
+    background-color: black;
+    .footer-nav{
+        display: flex;
+        justify-content: space-around;
+        a{
+            text-decoration: none;
+            color: #A6A6A6;
+            padding: 10px 5px;
+            font-size: 12px;
+        }
+    }
+    .container{
+        .row{
+            .col-6{
+                color: #A6A6A6;
+                padding: 0;
+                .card{
+                    border-radius: 0px;
+                    padding: 0;
+                    background-color: #1E1E1E;
+                    .card-body{
+                        padding:0;
+                        height: 150px;
+                        .text{
+                            flex-direction: column;
+                            justify-content: space-between;
+                        }
+                        p{
+                            font-size: 10px;
+                            margin: 5px 0;
+                            &.title{
+                                color: white;
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    li{
+                        i{
+                            display: block;
+                            color: white;
+                            font-size: 16px;
+                            margin-bottom: 5px;
+                        }
+                        text-align: center;
+                        font-size: 8px;
+                        border-radius: 0px;
+                        width: 50%;
+                        height: 80px;
+                        border: 1px solid #505050;
+                        background-color: #323232;
+                        margin: 0 0 -1px -1px;
+                    }
+                    ul{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

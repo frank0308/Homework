@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bff1bb511a.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body>div {
+            width: 700px;
+            height: 500px;
+            background-color: rgb(255, 245, 187);
+        }
+
+        .control-nav>div {
+            width: 31%;
+            background-color: #E9ECEF;
+        }
+
+        .control-nav>div:active,
+        .input-group-append>.input-group-text:hover {
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .control-nav>div:hover,
+        .input-group-append>.input-group-text:hover {
+            /* border: 2px solid black; */
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+        .text-box{
+            height: 35vh;
+            background-color: transparent;
+        }
+        .restart, .check-answer, .input-group{
+            visibility: hidden;
+        }
+    </style>
+
+    <title>GuessNumber</title>
+</head>
+
+<body>
+    <h1 class="text-center">猜猜數字!</h1>
+    <div class="mx-auto my-5 px-5 py-2 shadow">
+        <div class="control-nav my-3 d-flex justify-content-between">
+            <div class="border rounded px-3 py-1 text-center start">
+                開始
+            </div>
+            <div class="border rounded px-3 py-1 text-center restart">
+                放棄重來
+            </div>
+            <div class="border rounded px-3 py-1 text-center check-answer">
+                看答案
+            </div>
+        </div>
+
+        <ul class="list-group my-5 overflow-auto">
+            <div class="text-box">
+            </div>
+        </ul>
+
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">猜答案</span>
+            </div>
+            <input type="text" class="form-control answer" aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+                <span class="input-group-text btn-guess">猜</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="/Homework/guessNumber/guessNumber.js"></script>
+</body>
+
+</html>

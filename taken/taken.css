@@ -217,4 +217,103 @@
   font-size: 10px;
   margin-bottom: 6px;
 }
+
+.take-it-taken {
+  background-image: url(/taken/img/ia_100000152.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+  background-image: url(/taken/img/ia_100000152.jpg), linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-blend-mode: multiply;
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.take-it-taken p {
+  padding: 80px 0;
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.take-it-taken p span {
+  display: block;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .footer-nav a {
+  text-decoration: none;
+  color: #A6A6A6;
+  padding: 10px 5px;
+  font-size: 12px;
+}
+
+.footer .container .row .col-6 {
+  color: #A6A6A6;
+  padding: 0;
+}
+
+.footer .container .row .col-6 .card {
+  border-radius: 0px;
+  padding: 0;
+  background-color: #1E1E1E;
+}
+
+.footer .container .row .col-6 .card .card-body {
+  padding: 0;
+  height: 150px;
+}
+
+.footer .container .row .col-6 .card .card-body .text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .container .row .col-6 .card .card-body p {
+  font-size: 10px;
+  margin: 5px 0;
+}
+
+.footer .container .row .col-6 .card .card-body p.title {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer .container .row .col-6 .card li {
+  text-align: center;
+  font-size: 8px;
+  border-radius: 0px;
+  width: 50%;
+  height: 80px;
+  border: 1px solid #505050;
+  background-color: #323232;
+  margin: 0 0 -1px -1px;
+}
+
+.footer .container .row .col-6 .card li i {
+  display: block;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.footer .container .row .col-6 .card ul {
+  margin: 0;
+}
 /*# sourceMappingURL=taken.css.map */
