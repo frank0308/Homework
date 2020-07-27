@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/bff1bb511a.js" crossorigin="anonymous"></script>
+    <style>
+        .calculator{
+            width: 500px;
+            height: 90vh;
+            background-color: rgb(45, 87, 167);
+        }
+        .calculator > div{
+            position: relative;
+            height: 30%;
+            background-color: rgb(176, 203, 252);
+        }
+        .calculator > div > p{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 30px;
+        }
+        td{
+            width: 25%;
+            font-weight: bold;
+            border-right: 1px solid rgb(176, 203, 252);
+            border-bottom: 1px solid rgb(176, 203, 252);
+            background-color: rgb(112, 154, 233);
+            font-size: 30px;
+        }
+        td:hover{
+            background-color: rgb(83, 114, 172)
+        }
+        td:active{
+            background-color: rgb(57, 78, 117);
+            color: white;
+        }
+        tr td:last-child{
+            border-right: none;
+        }
+        tr:last-child td{
+            border-bottom: none;
+        }
+        table{
+            height: 70%;
+        }
+    </style>
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="calculator mx-auto mt-4 p-3">
+        <div class="result-area w-100 mx-auto">
+            <p class="m-0 result"></p>
+        </div>
+        <table class="w-100 text-center">
+            <tbody>
+                <tr>
+                    <td class="clean">C</td>
+                    <td class="operators">-/+</td>
+                    <td class="operators">%</td>
+                    <td class="numReturn"><i class="fas fa-reply"></i></td>
+                </tr>
+                <tr>
+                    <td class="numbers">7</td>
+                    <td class="numbers">8</td>
+                    <td class="numbers">9</td>
+                    <td class="operators divide"><i class="fas fa-divide" ></i></td>
+                </tr>
+                <tr>
+                    <td class="numbers">4</td>
+                    <td class="numbers">5</td>
+                    <td class="numbers">6</td>
+                    <td class="operators">X</td>
+                </tr>
+                <tr>
+                    <td class="numbers">1</td>
+                    <td class="numbers">2</td>
+                    <td class="numbers">3</td>
+                    <td class="operators">-</td>
+                </tr>
+                <tr>
+                    <td class="numbers">0</td>
+                    <td class="numbers">.</td>
+                    <td class="operators">=</td>
+                    <td class="operators">+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="/Homework/cauculator/calculator.js"></script>
+</body>
+
+</html>

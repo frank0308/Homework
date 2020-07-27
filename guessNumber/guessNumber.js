@@ -19,6 +19,7 @@ btnStart.addEventListener('click', function () {
     btnStart.style.visibility = "hidden";
 })
 btnRestart.addEventListener('click', function () {
+    alert(`換答案囉，原本的答案是${correct}，再試試看吧`);
     removeOldMessage();
     correct = createNumber();
     document.querySelector(".answer").value = "";
@@ -119,6 +120,7 @@ function gameEnd() {
     congratulation.innerText = "你真棒!再來一場吧?";
     congratulation.classList.add("list-group-item", "d-flex");
     document.querySelector('.text-box').append(congratulation);
+
     let good = document.createElement("i");
         good.classList.add("fas", "fa-thumbs-up", "text-primary", "mr-2")
         good.style.lineHeight = "1.5";
