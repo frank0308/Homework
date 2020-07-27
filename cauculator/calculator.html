@@ -21,10 +21,18 @@
             height: 30%;
             background-color: rgb(176, 203, 252);
         }
-        .calculator > div > p{
+        .calculator > div > .messageArea{
             position: absolute;
             right: 0;
             bottom: 0;
+            font-size: 30px;
+        }
+        .calculator > div > .pre-messageArea{
+            position: absolute;
+            color: rgb(83, 114, 172);
+            z-index: 1;
+            right: 0;
+            bottom: 35px;
             font-size: 30px;
         }
         td{
@@ -59,39 +67,40 @@
 
     <div class="calculator mx-auto mt-4 p-3">
         <div class="result-area w-100 mx-auto">
-            <p class="m-0 result"></p>
+            <p class="m-0 pre-messageArea"></p>
+            <p class="m-0 messageArea"></p>
         </div>
         <table class="w-100 text-center">
             <tbody>
                 <tr>
-                    <td class="clean">C</td>
-                    <td class="operators">-/+</td>
-                    <td class="operators">%</td>
-                    <td class="numReturn"><i class="fas fa-reply"></i></td>
+                    <td data-type="clean">C</td>
+                    <td data-type="operator">-/+</td>
+                    <td data-type="operator">%</td>
+                    <td data-type="numReturn"><i class="fas fa-reply"></i></td>
                 </tr>
                 <tr>
-                    <td class="numbers">7</td>
-                    <td class="numbers">8</td>
-                    <td class="numbers">9</td>
-                    <td class="operators divide"><i class="fas fa-divide" ></i></td>
+                    <td data-type="number">7</td>
+                    <td data-type="number">8</td>
+                    <td data-type="number">9</td>
+                    <td data-type="operator" class="divide">/</i></td>
                 </tr>
                 <tr>
-                    <td class="numbers">4</td>
-                    <td class="numbers">5</td>
-                    <td class="numbers">6</td>
-                    <td class="operators">X</td>
+                    <td data-type="number">4</td>
+                    <td data-type="number">5</td>
+                    <td data-type="number">6</td>
+                    <td data-type="operator">X</td>
                 </tr>
                 <tr>
-                    <td class="numbers">1</td>
-                    <td class="numbers">2</td>
-                    <td class="numbers">3</td>
-                    <td class="operators">-</td>
+                    <td data-type="number">1</td>
+                    <td data-type="number">2</td>
+                    <td data-type="number">3</td>
+                    <td data-type="operator">-</td>
                 </tr>
                 <tr>
-                    <td class="numbers">0</td>
-                    <td class="numbers">.</td>
-                    <td class="operators">=</td>
-                    <td class="operators">+</td>
+                    <td data-type="number">0</td>
+                    <td data-type="operator">.</td>
+                    <td data-type="compute">=</td>
+                    <td data-type="operator">+</td>
                 </tr>
             </tbody>
         </table>
