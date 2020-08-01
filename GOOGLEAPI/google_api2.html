@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Map</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .area {
+            position: fixed;
+            border:2px solid rgb(49, 128, 173);
+            background-color: rgb(252, 244, 141);
+            width: 320px;
+            height: 80vh;
+            top: 80px;
+            left: 20px;
+            overflow: auto;
+        }
+
+        .display{
+            border-top: 2px solid rgb(49, 128, 173);
+        }
+        .display .pharmacyInfo{
+            /* border:1px solid rgb(255, 200, 50); */
+            background-color: rgb(247, 244, 205);
+        }
+        .display .pharmacyInfo p{
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        
+        .display .pharmacyInfo:hover{
+            cursor: pointer;
+            background-color: rgb(172, 170, 140);
+        }
+        #content, .display, .title {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        #bodyContent>p:not(.text-white) {
+            font-weight: 700;
+        }
+
+        #content button {
+            font-size: 14px;
+        }
+
+        .firstHeading, .display h4 {
+            font-size: 24px;
+        }
+
+        .openTime td,
+        .openTime th {
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .openTime table {
+            display: none;
+        }
+
+        #openTime:checked~div table {
+            display: block;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    
+    <div class="area">
+        <div class="control p-3">
+            <!-- <h4 class="title">搜尋</h4> -->
+            <select name="city" id="city" class="custom-select w-50">
+                <option value="none">請選擇城市</option>
+            </select>
+            <select name="distinct" id="distinct" class="custom-select w-50 mt-3">
+            </select>
+        </div>
+        <div class="display px-3">
+            <div class="container">
+                <div class="row">
+                    <div>
+                    <template id="pharmacyCard">
+                        
+                        <h5>name</h5>
+                        <p class="phone">phone</p>
+                        <p class="address">address</p>
+                        <p><span class="maskAdult">maskleft</span><span class="maskChild">maskleft</span></p>
+
+                    </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyO1vy0QaITVTahKLSJYfw_bgPxI7H7IU&callback=initMap&libraries&v=weekly"
+        defer>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="google_api2.js"></script>
+</body>
+
+</html>
