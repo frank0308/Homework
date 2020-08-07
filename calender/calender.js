@@ -87,7 +87,7 @@ function createCalender(date) {
         if (firstDay <= i) {
             firstTd.addEventListener('click', function (e) {
                 $('#exampleModal').modal('show');
-                selectedDay = e.target.closest('th');
+                selectedDay = e.target.closest('td');
                 let key = `${nowMonth.getFullYear()}` + " " + `${nowMonth.getMonth()}` + " " + `${selectedDay.innerText.split(/\s+/)[0]}`
                 if (localStorage.hasOwnProperty(key)) {
                     console.log(2)
@@ -200,7 +200,11 @@ function createPin(father) {
 
         for (let i = 0; i < data.length; i++) {
             let p = document.createElement('p');
-            p.innerText = data[i].title;
+            if(data[i].title.length <= 5){
+                p.innerText = data[i].title;
+            } else {
+                p.innerText = data[i].title.slice(0, 5) + '...'
+            }
             listContainer.append(p)
             if( i == 1){
                 break;
