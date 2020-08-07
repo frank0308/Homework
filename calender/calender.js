@@ -87,7 +87,7 @@ function createCalender(date) {
         if (firstDay <= i) {
             firstTd.addEventListener('click', function (e) {
                 $('#exampleModal').modal('show');
-                selectedDay = e.target.closest('td');
+                selectedDay = e.target.closest('th');
                 let key = `${nowMonth.getFullYear()}` + " " + `${nowMonth.getMonth()}` + " " + `${selectedDay.innerText.split(/\s+/)[0]}`
                 if (localStorage.hasOwnProperty(key)) {
                     console.log(2)
