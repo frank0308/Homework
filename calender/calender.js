@@ -90,8 +90,10 @@ function createCalender(date) {
                 selectedDay = e.target.closest('td');
                 let key = `${nowMonth.getFullYear()}` + " " + `${nowMonth.getMonth()}` + " " + `${selectedDay.innerText.split(/\s+/)[0]}`
                 if (localStorage.hasOwnProperty(key)) {
+                    console.log(2)
                     createList(key)
                 } else {
+                    console.log(3)
                     toDoList.innerHTML = ""
                 }
             })
