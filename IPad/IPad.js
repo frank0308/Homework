@@ -27,26 +27,36 @@ let products = {
 }
 
 function createPage() {
-    let container = document.createElement('div');
-    container.classList.add('container');
-    let row = document.createElement('div');
-    row.classList.add('row');
-    container.append(row);
-    createColumn(row, 6);
+    let mainContainer = document.createElement('div');
+    mainContainer.classList.add('container');
+    let mainRow = document.createElement('div');
+    mainRow.classList.add('row');
+    container.append(mainRow);
+    createColumn(mainRow, 6);
+    createColumn(mainRow, 6);
     let imgContainer = Array.from(document.querySelectorAll('.row > .col-6'))[0];
     let img = document.createElement('img');
     img.classList.add('w-75')
     // img.src = ;
     imgContainer.append(img);
     let buttonContainer = Array.from(document.querySelectorAll('.row > .col-6'))[1];
-    
+    let colorTitle = document.createElement('p');
+    buttonContainer.append(colorTitle);
+    let colorContainer = document.createElement('div');
+    colorContainer.classList.add('container');
+    buttonContainer.append(colorContainer);
+    let colorRow = document.createElement('div');
+    colorRow.classList.add('row');
+    colorContainer.append(colorRow);
+    for (let i = 0; i < ; i++) {
+        const element = array[i];
+        
+    }
 
 }
 
-function createColumn(father,columnSpan) {
-    for (let index = 0; index < (12 / columnSpan); index++) {
-        let column = document.createElement('div');
-        column.classList.add(`col-${columnSpan}`);
-        father.append(column);
-    }
+function createColumn(father, columnSpan) {
+    let column = document.createElement('div');
+    column.classList.add(`col-${columnSpan}`);
+    father.append(column);
 }

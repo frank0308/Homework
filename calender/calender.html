@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calender.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row flex-column">
+            <div class="col-12 p-0 calender-head bg-secondary">
+                <h1 class="month text-white"></h1>
+                <div class="calender-head w-75 m-auto d-flex justify-content-between align-items-center">
+                    <button class="prev btn text-white">《</button>
+                    <p class="year m-0 d-inline text-white"></p>
+                    <button class="next btn text-white">》</button>
+                </div>
+            </div>
+            <div class="col-12 p-0 calender bg-warning">
+        
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">預定行程</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" class="close" data-dismiss="modal" data-toggle="modal"
+                        data-target="#inputModal">新增行程</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- template -->
+    <template id="to-do-list-template">
+        <li class="list-group-item">
+            <h6>title</h6>
+            <p class="describe">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto
+                maxime dolore distinctio voluptatum nemo atque id inventore. Necessitatibus alias non
+                hic rem dolorem quidem nam voluptatem consequuntur ipsa delectus.</p>
+            <p class="time">time</p>
+            <p class="place">place</p>
+            <img src="/Homework/calender/move_x.png" alt="X">
+        </li>
+    </template>
+
+    <!--Input Modal -->
+    <div class="modal fade" id="inputModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">輸入行程內容</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="title">標題</label>
+                        <input id="title" class="form-control" type="text" placeholder="title...">
+                        <label for="textarea">內容</label>
+                        <textarea id="textarea" class="form-control"
+                            placeholder="what are you going to do..."></textarea>
+                        <label for="time">時間</label>
+                        <input id="time" class="form-control" type="time" placeholder="time...">
+                        <label for="place">地點</label>
+                        <input id="place" class="form-control" type="text" placeholder="where...">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="save btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="calender.js"></script>
+</body>
+
+</html>

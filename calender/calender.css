@@ -1,0 +1,132 @@
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container {
+  width: 1440px !important;
+  margin-top: 15px;
+}
+
+.container .row button {
+  font-size: 40px;
+}
+
+.container .row .calender-head .year {
+  font-size: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+thead {
+  text-align: center;
+  font-size: 26px;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+td {
+  width: 14.2857143%;
+  font-size: 53px;
+  color: #eee;
+  position: relative;
+}
+
+td div {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: black;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow: hidden;
+}
+
+td div p {
+  background-color: rgba(99, 147, 201, 0.45);
+  width: 65%;
+  margin: 5px 0;
+}
+
+td div .more {
+  font-style: italic;
+  width: auto;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  right: 10px;
+  bottom: -5px;
+  background-color: transparent;
+}
+
+.selectableTd:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.modal .modal-body {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.modal .modal-body .list-group {
+  padding: 0;
+}
+
+.modal .modal-body .list-group .list-group-item {
+  margin: 0;
+  padding-top: 10px;
+  position: relative;
+}
+
+.modal .modal-body .list-group .list-group-item li {
+  padding-top: 10px;
+}
+
+.modal .modal-body .list-group .list-group-item h6 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.modal .modal-body .list-group .list-group-item .describe {
+  margin: 0;
+}
+
+.modal .modal-body .list-group .list-group-item .time {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  text-align: right;
+}
+
+.modal .modal-body .list-group .list-group-item .place {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  text-align: right;
+}
+
+.modal .modal-body .list-group .list-group-item img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=calender.css.map */

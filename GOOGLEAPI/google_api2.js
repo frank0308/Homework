@@ -150,8 +150,11 @@ function createMarker(data) {
             `</div>` +
             `</div>`
     })
-    marker.addListener('click', function () {
+    marker.addListener('mouseover', function () {
         infoWindow.open(map, marker);
+    });
+    marker.addListener('mouseout', function () {
+        infoWindow.close();
     });
 
     return marker
