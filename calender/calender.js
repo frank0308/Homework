@@ -43,6 +43,7 @@ btnClose.addEventListener('click', function () {
     for (let i = 0; i < selectedDay.children.length; i++) {
         selectedDay.children[i].remove();
     }
+    console.dir(selectedDay)
     createPin(selectedDay);
 })
 
@@ -86,7 +87,13 @@ function createCalender(date) {
         if (firstDay <= i) {
             firstTd.addEventListener('click', function (e) {
                 $('#exampleModal').modal('show');
-                selectedDay = e.target;
+                selectedDay = e.target.closest('td');
+                let key = `${nowMonth.getFullYear()}` + " " + `${nowMonth.getMonth()}` + " " + `${selectedDay.innerText.split(/\s+/)[0]}`
+                if (localStorage.hasOwnProperty(key)) {
+                    createList(key)
+                } else {
+                    toDoList.innerHTML = ""
+                }
             })
             firstTd.classList.add('selectableTd')
             firstTd.innerText = i - firstDay + 1
@@ -105,9 +112,7 @@ function createCalender(date) {
                 midTd.addEventListener('click', function (e) {
                     $('#exampleModal').modal('show');
                     selectedDay = e.target.closest('td');
-                    console.log(selectedDay)
                     let key = `${nowMonth.getFullYear()}` + " " + `${nowMonth.getMonth()}` + " " + `${selectedDay.innerText.split(/\s+/)[0]}`
-                    console.log((key))
                     if (localStorage.hasOwnProperty(key)) {
                         createList(key)
                     } else {
@@ -187,9 +192,7 @@ function createList(key) {
 function createPin(father) {
     let key = `${nowMonth.getFullYear()}` + " " + `${nowMonth.getMonth()}` + " " + `${father.innerText.split(/\s+/)[0]}`
     if (localStorage.hasOwnProperty(key)) {
-        console.log(key)
         let data = JSON.parse(localStorage.getItem(key));
-        console.log(data)
         let listContainer = document.createElement('div');
         father.append(listContainer)
 
@@ -203,7 +206,7 @@ function createPin(father) {
         }
         console.dir(father)
         console.log(father.children)
-        if (data.length > 3) {
+        if (data.length > 2) {
             let more = document.createElement('p')
             more.innerText = 'more...'
             more.classList.add('more')
