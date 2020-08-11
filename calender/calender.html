@@ -82,18 +82,18 @@
                 <div class="modal-body">
                     <form>
                         <label for="title">標題</label>
-                        <input id="title" class="form-control" type="text" placeholder="title...">
+                        <input id="title" class="form-control" type="text" placeholder="title..." required>
                         <label for="textarea">內容</label>
                         <textarea id="textarea" class="form-control"
-                            placeholder="what are you going to do..."></textarea>
+                            placeholder="what are you going to do..." required></textarea>
                         <label for="time">時間</label>
                         <input id="time" class="form-control" type="time" placeholder="time...">
                         <label for="place">地點</label>
                         <input id="place" class="form-control" type="text" placeholder="where...">
+                        <div class="submit text-right">
+                            <input type="button" class="save mt-3 btn btn-primary " value="確認">
+                        </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="save btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>

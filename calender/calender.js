@@ -30,14 +30,9 @@ btnPrev.addEventListener('click', function () {
 })
 btnSaveData.addEventListener('click', function () {
     saveData();
-    title = "";
-    content = "";
-    time = "";
-    place = "";
     $('#inputModal').modal('hide');
     $('#exampleModal').modal('show');
     event.stopPropagation();
-
 })
 btnClose.addEventListener('click', function () {
     for (let i = 0; i < selectedDay.children.length; i++) {
@@ -160,6 +155,12 @@ function saveData() {
     content = document.querySelector('#inputModal form #textarea').value
     time = document.querySelector('#inputModal form #time').value
     place = document.querySelector('#inputModal form #place').value
+
+    if(title.length == 0 || content.length == 0) {
+        alert("標題和內容不得為空")
+        return
+    }
+
     let temp = {
         title: title,
         content: content,
@@ -170,6 +171,10 @@ function saveData() {
     localStorage.setItem(timeStamp, JSON.stringify(todoArray))
 
     createList(timeStamp)
+    title = "";
+    content = "";
+    time = "";
+    place = "";
 }
 
 function createList(key) {

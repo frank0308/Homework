@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.game-area{
+    height: 60vh;
+    .col-4{
+        .form-group{
+            border: 2px solid;
+        }
+    }
+    .col-8{
+        .puzzle{
+            margin: auto;
+            width: 480px;
+            height: 480px;
+            background-size: cover;
+            background-color: #ddd;
+            position: relative;
+            .puzzle-pieces{
+                position: absolute;
+                border: 1px solid #ddd;
+            }
+        }
+    }
+}
+.blank{
+    background-color: rebeccapurple;
+}
