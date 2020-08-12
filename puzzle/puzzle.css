@@ -16,16 +16,16 @@
   width: 480px;
   height: 480px;
   background-size: cover;
-  background-color: #ddd;
+  background-color: #6193aa;
   position: relative;
 }
 
 .game-area .col-8 .puzzle .puzzle-pieces {
   position: absolute;
-  border: 1px solid #ddd;
+  border: 1px solid #6193aa;
 }
 
 .blank {
-  background-color: rebeccapurple;
+  background-color: transparent;
 }
 /*# sourceMappingURL=puzzle.css.map */

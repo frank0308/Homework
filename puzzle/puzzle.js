@@ -1,11 +1,11 @@
 let sizeSelector = document.querySelector('.size')
 let sizeScale = sizeSelector.value.slice(0, 1);
-let img = '800by600_niptor_day_2005_cut.png';
+let img = '800by600_valentinesday2006.bmp';
 
 sizeSelector.addEventListener('change', function(){
     sizeScale = sizeSelector.value.slice(0, 1)
     createPuzzle(sizeScale)
-    messPuzzle();
+    messPuzzle(sizeScale);
 })
 let puzzleIMG = document.querySelector('.puzzle');
 console.dir(puzzleIMG)
@@ -35,7 +35,7 @@ function changeIMG() {
         reader.onload = function () {
             img = this.result;
             createPuzzle(sizeScale,img);
-            messPuzzle();
+            messPuzzle(sizeScale);
         }
     }
 }
@@ -94,13 +94,22 @@ function pieceMove(piece, sizeScale = 3){
     }
 }
 
-function messPuzzle(){
-    let pieces = Array.from(document.querySelectorAll('.puzzle-pieces'));
-    console.log(pieces)
-    for (let i = 0; i < 480; i++) {
-        let ranNum = getRandom(0, pieces.length - 1)
-        console.log(ranNum)
-        pieceMove(pieces[ranNum], sizeScale)
+function messPuzzle(sizeScale = 3){
+    let size = parseInt((480 / sizeScale).toFixed())
+    let blank = document.querySelector('.blank')
+    let pieces = Array.from(document.querySelectorAll('.puzzle-pieces'))
+    for (let i = 0; i < 50 * sizeScale; i++) {
+        let pcAroundBlank = pieces.filter((i) => {
+            if( (i.offsetLeft + size == blank.offsetLeft && i.offsetTop == blank.offsetTop) ||
+                (i.offsetLeft - size == blank.offsetLeft && i.offsetTop == blank.offsetTop) ||
+                (i.offsetTop + size == blank.offsetTop && i.offsetLeft == blank.offsetLeft) ||
+                (i.offsetTop - size == blank.offsetTop && i.offsetLeft == blank.offsetLeft) ){
+                    return i
+                }
+            });
+        let ranNum = getRandom(0, pcAroundBlank.length - 1)
+        // console.log(ranNum)
+        pieceMove(pcAroundBlank[ranNum], sizeScale)
     }
     for(let i of pieces){
         i.style.transition = '0.2s'
